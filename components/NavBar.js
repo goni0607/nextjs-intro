@@ -10,12 +10,12 @@ export default function NavBar() {
             <ul>
                 <li>
                     <Link href="/">
-                        <a className={`${styles.link} ${router.pathname === "/" ? styles.active : ""}`}>Home</a>
+                        <a className={`${styles.link} ${router.pathname === "/" ? "active" : ""}`}>Home</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/about">
-                        <a className={[styles.link, router.pathname === "/about" ? styles.active : "",].join(" ")}>About</a>
+                        <a className={[styles.link, router.pathname === "/about" ? "active" : "",].join(" ")}>About</a>
                     </Link>
                 </li>
             </ul>
@@ -25,6 +25,9 @@ export default function NavBar() {
                 }
                 a {
                     text-decoration: none;
+                }
+                .active {
+                    color: yellow;
                 }
             `}</style>
         </nav>
