@@ -19,6 +19,14 @@ export default function NavBar() {
                     </Link>
                 </li>
             </ul>
+            <style jsx>{`
+                nav {
+                    background-color: tomato;
+                }
+                a {
+                    text-decoration: none;
+                }
+            `}</style>
         </nav>
     );
 }
